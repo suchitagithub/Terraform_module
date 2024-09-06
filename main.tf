@@ -4,7 +4,7 @@ provider "aws" {
 module "autoscaling" {
   source = "https://github.com/suchitagithub/autoscaling_task.git?ref=1.0.0"
  
-  ami_id             = var.ami_id
+  ami_id             = ami-0075013580f6322a1
   instance_type      = var.instance_type
   security_group_id  = module.vpc.security_group_id
   user_data          = <<-EOF
